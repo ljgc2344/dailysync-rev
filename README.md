@@ -13,6 +13,8 @@
 
 [![](https://img.shields.io/badge/-Telegram-%2326A5E4?style=flat-square&logo=telegram&logoColor=ffffff)](https://t.me/garmindailysync)
 
+## 【2025-12说明】开启了ECG功能的说明
+开通了ECG功能的佳明账号，因为登录佳明时需要提供验证码，开通ECG后，这个验证码无法关闭，github上要中途要输入一次验证码，本同步脚本无法支持，下方的Web版本做了兼容，可以使用。 
 
 ## Web版本
 如果你不熟悉代码，强烈推荐使用这个版本，在网页上填入账号点击就能同步数据，简洁好用。
@@ -31,14 +33,14 @@ github:（actions方式正常可用）
 ### 拉取代码
 目前没有提供打包好的镜像，需要拉取下来自行打包使用
 ```shell
-git clone https://gitlab.com/gooin/dailysync.git
+git clone https://github.com/gooin/dailysync-rev.git
 ```
 ### 修改配置文件
 打开`.env`文件，按注释填入信息
 
 ### 修改docker-compsoe.yml 文件
 
-可以通过修改文件中的`command`参数决定每次执行的功能，默认是国际区同步到国区
+可以通过修改文件中的`command`参数决定每次执行的功能，默认是国区同步到国际区
 
 ```shell
 yarn sync_cn
