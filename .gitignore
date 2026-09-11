@@ -2,7 +2,11 @@ dist
 node_modules
 *.log
 garmin_fit_files
+garmin_wellness_files
+.env
+db/*.db
 ./src/constant.my.ts
+.env
 
 # Virtual environment
 bin/
